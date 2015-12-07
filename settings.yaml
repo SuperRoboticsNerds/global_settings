@@ -17,8 +17,8 @@ ir_positions_5: [-0.013,0.026,1.57]
 ir_positions_6: [-0.09,0.017, 3.14]
 
 known_pos: true
-start_x: 0.62
-start_y: 0.17
+start_x: 0.1
+start_y: 0.2
 start_theta: 0.0
 
 wheel_radius: 0.05
@@ -44,17 +44,22 @@ Kd_right: 0.3
 
 ### THE PATH CONTROLLER
 
+#standing still and rotating
 control_Kp_rot_rot: 4.0
-control_Ki_rot_rot: 0.0
+control_Ki_rot_rot: 1.0
 control_Kd_rot_rot: 0.0
 
-control_Kp_rot: 3.7
-control_Ki_rot: 0.0
+#moving forward and rotating
+#was 2.5, 0.5, 0.0
+control_Kp_rot: 3.5
+control_Ki_rot: 1.0
 control_Kd_rot: 0.0
 
-control_Kp_l: 1.0
+control_Kp_l: 4.0
 control_Ki_l: 0.0
 control_Kd_l: 0.0
 
+node_vicinity_threshold: 0.045
+rotation_threshold: 0.3
 
 
