@@ -1,12 +1,12 @@
 has_parameters: true
 
-map_file: 'contest_maze.txt'
+map_file: 'small_maze.txt'
 
 rot_spread: 0.4
 vel_spread: 0.7
-updates_before_resample: 5
+updates_before_resample: 2
 times_to_resample: 1
-prob_sigma: 0.001
+prob_sigma: 0.0005
 maze_xmax: 2.48
 maze_ymax: 2.44
 ir_positions_1: [0.042,0.022,0.87]
@@ -16,8 +16,8 @@ ir_positions_4: [-0.031,-0.025,-1.57]
 ir_positions_5: [-0.013,0.026,1.57]
 ir_positions_6: [-0.09,0.017, 3.14]
 
-known_pos: true
-start_x: 0.63
+known_pos: false
+start_x: 0.1
 start_y: 0.2
 start_theta: 0.0
 
@@ -59,7 +59,7 @@ control_Kp_l: 4.0
 control_Ki_l: 0.0
 control_Kd_l: 0.0
 
-node_vicinity_threshold: 0.03
+node_vicinity_threshold: 0.045
 rotation_threshold: 0.3
 
 
